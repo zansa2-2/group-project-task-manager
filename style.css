@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    min-width: 180px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.task {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.completed {
+    background-color: #d4edda;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    height: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    transition: 0.4s;
+}
+
+.task-buttons {
+    margin-top: 10px;
+}
+
+.task-buttons button {
+    margin-right: 5px;
+}
+
+.clear-btn {
+    margin-top: 20px;
+    width: 100%;
+    background-color: crimson;
+    color: white;
+}body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    min-width: 180px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.task {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.completed {
+    background-color: #d4edda;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    height: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    transition: 0.4s;
+}
+
+.task-buttons {
+    margin-top: 10px;
+}
+
+.task-buttons button {
+    margin-right: 5px;
+}
+
+.clear-btn {
+    margin-top: 20px;
+    width: 100%;
+    background-color: crimson;
+    color: white;
+}
