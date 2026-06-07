@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group Project Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Group Project Task Manager</h1>
+
+        <div class="form">
+            <input type="text" id="taskName" placeholder="Task Name">
+
+            <input type="text" id="assignedTo" placeholder="Assigned To">
+
+            <input type="date" id="dueDate">
+
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="stats">
+            <h3 id="progressText">0 / 0 Tasks Completed</h3>
+
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+        </div>
+
+        <h2>Task List</h2>
+
+        <div id="taskList"></div>
+
+        <button class="clear-btn" onclick="clearAllTasks()">
+            Clear All Tasks
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
