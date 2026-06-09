@@ -197,3 +197,63 @@ function clearAllTasks() {
         displayTasks();
     }
 }
+function displayMyTasks() {
+
+    const currentUser =
+        document.getElementById(
+            "currentUser"
+        ).value.trim();
+
+    const myTasksDiv =
+        document.getElementById(
+            "myTasks"
+        );
+
+    myTasksDiv.innerHTML = "";
+
+    if (currentUser === "") {
+
+        myTasksDiv.innerHTML =
+            "<p>Please enter your name.</p>";
+
+        return;
+    }
+
+    let myTasksFound = 0;
+
+    for (let i = 0; i < tasks.length; i++) {
+
+        if (
+            tasks[i].assignedTo
+                .toLowerCase() ===
+            currentUser.toLowerCase()
+        ) {
+
+            myTasksFound++;
+
+            myTasksDiv.innerHTML += `
+                <div class="my-task">
+                    <strong>
+                        ${tasks[i].taskName}
+                    </strong><br>
+
+                    Due:
+                    ${tasks[i].dueDate}<br>
+
+                    Status:
+                    ${
+                        tasks[i].completed
+                        ? "✅ Completed"
+                        : "⚠ Pending"
+                    }
+                </div>
+            `;
+        }
+    }
+
+    if (myTasksFound === 0) {
+
+        myTasksDiv.innerHTML =
+            "<p>No tasks assigned to you.</p>";
+    }
+}
