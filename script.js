@@ -208,7 +208,10 @@ function displayMyTasks() {
         document.getElementById(
             "myTasks"
         );
-
+const notificationBox =
+    document.getElementById(
+        "notificationBox"
+    );
     myTasksDiv.innerHTML = "";
 
     if (currentUser === "") {
@@ -220,6 +223,7 @@ function displayMyTasks() {
     }
 
     let myTasksFound = 0;
+    let unfinishedCount = 0;
 
     for (let i = 0; i < tasks.length; i++) {
 
@@ -228,6 +232,9 @@ function displayMyTasks() {
                 .toLowerCase() ===
             currentUser.toLowerCase()
         ) {
+            if (!tasks[i].completed) {
+    unfinishedCount++;
+}
 
             myTasksFound++;
 
@@ -250,8 +257,21 @@ function displayMyTasks() {
             `;
         }
     }
+if (unfinishedCount > 0) {
 
+    notificationBox.innerHTML =
+        `⚠ You have ${unfinishedCount}
+         unfinished task(s)`;
+
+}
+else if (myTasksFound > 0) {
+
+    notificationBox.innerHTML =
+        "🎉 All of your tasks are complete!";
+}
     if (myTasksFound === 0) {
+        notificationBox.innerHTML =
+    "No tasks assigned.";
 
         myTasksDiv.innerHTML =
             "<p>No tasks assigned to you.</p>";
