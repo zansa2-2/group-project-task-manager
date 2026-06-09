@@ -151,3 +151,29 @@ button {
     background-color: crimson;
     color: white;
 }
+.main-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.task-section {
+    flex: 2;
+}
+
+.my-tasks-section {
+    flex: 1;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.my-tasks-section h2 {
+    margin-top: 0;
+}
+
+.my-task {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
