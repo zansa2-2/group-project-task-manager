@@ -177,3 +177,11 @@ button {
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
 }
+#notificationBox {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff3cd;
+    font-weight: bold;
+}
