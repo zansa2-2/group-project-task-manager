@@ -28,14 +28,34 @@
         </div>
 
         <h2>Task List</h2>
+<div class="main-content">
+
+    <div class="task-section">
+
+        <h2>Task List</h2>
 
         <div id="taskList"></div>
 
-        <button class="clear-btn" onclick="clearAllTasks()">
-            Clear All Tasks
+    </div>
+
+    <div class="my-tasks-section">
+
+        <h2>My Tasks</h2>
+
+        <input
+            type="text"
+            id="currentUser"
+            placeholder="Enter Your Name">
+
+        <button onclick="displayMyTasks()">
+            Show My Tasks
         </button>
 
+        <div id="myTasks"></div>
+
     </div>
+
+</div>
 
     <script src="script.js"></script>
 
